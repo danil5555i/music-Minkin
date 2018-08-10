@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    font-family: 'Prata', serif;
+}
+h2 {
+    font-family: 'Prata', serif;
+}
+h3 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-family: 'Prata', serif;
+}
+a {
+    text-decoration: none;
+    font-family: 'Prata', serif;
+}
+
+p {
+    line-height: 30px;
+    font-family: 'Pt-sans', sans-serif;
+}
+
+
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+nav {
+    margin: 30px 50px;
+    display: inline-block;
+}
+nav a {
+    color: #202020;
+    margin-right: 15px;
+}
+
+.diez {
+    width: 1280px;
+    height: 770px;
+    background-image: url(../images/bg_main.jpg);
+    background-size: 1280px 770px;
+
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    color: #fff;
+}
+
+header footer {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 150px;
+}
+
+.name {
+    display: flex;
+}
+
+.box {
+    display: flex;
+}
+
+
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px; 
+}
+
+
+
+.form {
+    color: #000;
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255, 0.8);
+
+    width: 265px;
+    height: 420px;
+
+}
