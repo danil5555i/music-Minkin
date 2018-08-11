@@ -28,7 +28,9 @@ h1 {
     font-family: 'Prata', serif;
 }
 h2 {
+    font-size: 50px;
     font-family: 'Prata', serif;
+    color: #000;
 }
 h3 {
     font-size: 24px;
@@ -48,7 +50,7 @@ p {
 
 
 .wrapper{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -127,9 +129,17 @@ header footer {
     margin-right: -15px;
     color: #fff; 
 }
-.directions {
-    color: #000;
+.directions h2 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 5px;
+    text-align: center;
 }
+
+
+
+
+
 
 [class^="col-"] { 
     padding-left: 15px; 
@@ -155,7 +165,7 @@ header footer {
     height: 270px;
     background-image: url(../images/directions_card_img_1.jpg);
     background-size: 470px 270px;
-    margin: 5px 0;
+    margin: 28px;
 }
 
 .piano {
@@ -163,7 +173,7 @@ header footer {
     height: 270px;
     background-image: url(../images/directions_card_img_3.jpg);
     background-size: 470px 270px;
-    margin: 5px 0;
+    margin: 28px;
 }
 
 .vocal {
@@ -171,20 +181,20 @@ header footer {
     height: 270px;
     background-image: url(../images/directions_card_img_2.jpg);
     background-size: 570px 270px;
-    margin: 5px 0;
+    margin: 28px;
 }
 
 .lecture {
-    width: 270px;
-    height: 270px;
+    width: 257px;
+    height: 268px;
     background-image: url(../images/directions_card_img_4.jpg);
-    background-size: 270px 270px;
-    margin: 5px 0;
+    background-size: 257px 268px;
+    margin: 28px;
 }
 
 .areas {
-    width: 270px;
-    height: 270px;
+    width: 257px;
+    height: 268px;
     background-color: yellow;
-    margin: 5px 0;
+    margin: 28px;
 }
