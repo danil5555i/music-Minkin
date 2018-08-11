@@ -1,3 +1,21 @@
+.promo { display: none; } /* по умолчанию */
+@media (min-width: 480px) { /* если вьюпорт 480px и шире */
+ .promo { display: block; }
+}
+@media (min-width: 768px) { /* если вьюпорт 768px и шире */
+ .promo { font-size: 24px; }
+}
+@media (min-width: 999px) { /* если вьюпорт 990px и шире */
+ .promo { color: #bada55; }
+}
+
+
+
+
+
+
+
+
 body {
     display: flex;
     justify-content: center;
@@ -100,4 +118,73 @@ header footer {
     width: 265px;
     height: 420px;
 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    color: #fff; 
+}
+.directions {
+    color: #000;
+}
+
+[class^="col-"] { 
+    padding-left: 15px; 
+    padding-right: 15px;
+    margin: 5px 0; 
+}
+
+.col-1{
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+
+.guitar {
+    width: 470px;
+    height: 270px;
+    background-image: url(../images/directions_card_img_1.jpg);
+    background-size: 470px 270px;
+    margin: 5px 0;
+}
+
+.piano {
+    width: 470px;
+    height: 270px;
+    background-image: url(../images/directions_card_img_3.jpg);
+    background-size: 470px 270px;
+    margin: 5px 0;
+}
+
+.vocal {
+    width: 570px;
+    height: 270px;
+    background-image: url(../images/directions_card_img_2.jpg);
+    background-size: 570px 270px;
+    margin: 5px 0;
+}
+
+.lecture {
+    width: 270px;
+    height: 270px;
+    background-image: url(../images/directions_card_img_4.jpg);
+    background-size: 270px 270px;
+    margin: 5px 0;
+}
+
+.areas {
+    width: 270px;
+    height: 270px;
+    background-color: yellow;
+    margin: 5px 0;
 }
