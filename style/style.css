@@ -48,8 +48,7 @@ a {
 }
 
 p {
-    margin: 0;
-    font-family: 'Pt-sans', sans-serif;
+    font-family: 'Pt Sans', sans-serif;
 }
 
 
@@ -73,7 +72,7 @@ p {
 }
 
     p {
-        font-family: 'Pt-sans', sans-serif;
+        font-family: 'Pt Sans', sans-serif;
 }
 
     
@@ -215,15 +214,6 @@ ul {
         padding: 0 15px; 
 }
 
-    .form {
-        display: none;
-    }
-
-
-
-
-    
-
     .main-box {
         width: 100%;
     }
@@ -241,6 +231,10 @@ ul {
     width: 265px;
     height: 420px;
 
+}
+
+@media (max-width: 481px) {
+    .form-main {display: none;}
 }
 
 [class^="form"] { 
@@ -369,6 +363,17 @@ left: 65px;
 }
 
 
+@media (max-width: 481px) {
+    .col-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+
 .guitar {
     width: 40%;
     height: 270px;
@@ -445,6 +450,13 @@ left: 65px;
 } 
 
 
+
+.about {
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+
 .about-h {
     margin: 2.5%;
     text-align: center;
@@ -502,4 +514,56 @@ top: -5px;
     background-image: url(../images/advantages_card_img_3.png);
     background-size: cover;
     margin: 5px 2.5% 2.5% 0;
+}
+
+
+@media (max-width: 481px) {
+
+
+    .about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+    .group {
+        width: 100%;
+        margin: 2.5% 0;
+        height: 145px;
+    }
+
+    .result {
+        width: 100%;
+        margin: 2.5% 0;
+        height: 145px;
+
+    }
+
+    .studio {
+        width: 65%;
+        height: 145px;
+    }
+
+    .form-about {
+        width: 25%;
+        margin-right: 0;
+        margin-top: 1.5%;
+        margin-left: 5%;
+        height: 142px;
+        background-color: #eec643;
+
+    }
+    .about-p-1 {
+        position: relative;
+
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+        color: #fff;
+
+
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    }
+    .about-p-2 {display: none;}
+
 }
