@@ -642,7 +642,7 @@ left: 65px;
     position: absolute;
     display: block;
     box-sizing: content-box;
-    
+
     top: 50%;
     margin-top: -30px;
     left: 50%;
@@ -653,11 +653,10 @@ left: 65px;
     background: transparent;
     border: solid transparent;
     border-left-color: yellow;
-    /*border-right: 0;*/
     border-width: 20px 20px 20px 39px;
 }
 
-.item button:last-child {
+/*.item button:last-child {
     border-width: 50px 0 0 0;
-}
+}*/
 
