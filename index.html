@@ -129,10 +129,33 @@
 							<div class="studio">Студия</div>
 						
 
-						<div class="form form-about">
-								<p class="about-p-1">Вводный урок</p>
-								<p class="about-p-2">Попробуй любые направления  бесплатно</p>
+						<form action="" method="post" class="form-other">
+					<fieldset>
+						<div>						<p>Вводный урок</p>
+						<p>Попробуй любые направления  бесплатно</p>
+
+					<input type="text" minlength="3" title="Ведите имя" placeholder="Имя">
+					<input type="tel" pattern="[0-9]{7,13}" title="7-13 цифр" placeholder="Телефон">
+
+						<select name="" id=""> 
+						      <option>Направления
+						</option>
+						    <option>Гитара</option>
+						    <option>Вокал</option>
+						    <option>Фортепиано</option>
+						    <option>Скрипка</option>
+						    <option>Ударные</option>
+						    <option>Лекции</option>
+						  </optgroup>
+						</select>
 						</div>
+
+
+					<button type="submit" class="button-other">Записаться</button>
+					</fieldset>
+				</form>
+
+
 					</div>
 				</div>
 			</div>
@@ -168,21 +191,43 @@
 	</section>
 
 
-	<section class="communications">
+	<section id="communications" class="communications">
 		<div class="container">
 
 			<div class="row">
-				<div class="col-3">
-					<h2 id="communications">Ждём тебя</h2>
-					<div class="map"></div>
+				<div >
+					<h2 >Ждём тебя</h2>
+					<div id="map" class="map"></div>
 				</div>
 
 
-				<div class="col-1">
-					<div class="form">
-						<p>Вводный урок</p>
+				<div >
+
+					<form action="" method="post" class="form-other">
+					<fieldset>
+						<div>						<p>Вводный урок</p>
 						<p>Попробуй любые направления  бесплатно</p>
-					</div>
+
+					<input type="text" minlength="3" title="Ведите имя" placeholder="Имя">
+					<input type="tel" pattern="[0-9]{7,13}" title="7-13 цифр" placeholder="Телефон">
+
+						<select name="" id=""> 
+						      <option>Направления
+						</option>
+						    <option>Гитара</option>
+						    <option>Вокал</option>
+						    <option>Фортепиано</option>
+						    <option>Скрипка</option>
+						    <option>Ударные</option>
+						    <option>Лекции</option>
+						  </optgroup>
+						</select>
+						</div>
+
+
+					<button type="submit" class="button-other">Записаться</button>
+					</fieldset>
+				</form>
 
 				</div>
 			</div>
@@ -210,7 +255,29 @@
         </footer>
 	</div>
 
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+      
+        function init(){ 
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            }); 
+            
+            var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Содержимое всплывающей подсказки',
+                balloonContent: 'Содержимое балуна'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+
 	<script src="js/script.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
+
+
 </body>
 </html>

@@ -237,6 +237,7 @@ input {
     border: none;
     margin-bottom: 22px;
     border-bottom: 1.2px solid #000;
+    width: 100%;
 }
 
 select {
@@ -250,38 +251,28 @@ button {
     position: absolute;
     bottom: 0;
     margin-bottom: 14px;
-    margin-left: -33.6px;
+    margin-left: -33px;
 }
 
-button[type=submit] {
+button[class=button-main] {
         background-color: #021a23;
         color: #fff;
         border: 2px solid #021a23;
         padding: 30px 75px;
-        width: 102.5%;
+        width: 102%;
+    }
+
+
+    button[class=button-other] {
+        background-color: #eec643;
+        color: #fff;
+        border: 2px solid #eec643;
+        padding: 30px;
+        width: 102%;
     }
 
 
 
-
-
-
-
-.form-main {
-    color: #000;
-    border: 2px solid #000;
-    background-color: rgb(255, 255, 255, 0.8);
-
-    max-width: 265px;
-    height: 420px;
-
-}
-
-
-
-@media (max-width: 481px) {
-    .form-main {display: none;}
-}
 
 [class^="form"] { 
     color: #000;
@@ -290,6 +281,31 @@ button[type=submit] {
     width: 45%;
     margin: 0 2.5% 2.5% 0;
 }
+
+
+
+.form-main {
+    color: #000;
+    border: 2px solid #021a23;
+    background-color: rgb(255, 255, 255, 0.8);
+
+    max-width: 265px;
+    height: 420px;
+
+}
+
+
+.form-other {
+    margin-left: 2.5%;
+}
+
+
+
+@media (max-width: 481px) {
+    .form-main {display: none;}
+}
+
+
 
 .row {
     width: 100%;
@@ -401,7 +417,7 @@ left: 65px;
 }
 
 .col-2 {
-    width: 47%;
+    width: 48%;
 }
 
 .col-3 {
@@ -706,3 +722,7 @@ left: 65px;
     border-width: 50px 0 0 0;
 }*/
 
+.map {
+    width: 600px;
+    height: 400px;
+}
