@@ -138,8 +138,9 @@ header footer {
 
 .container-header {
     justify-content: space-between;
+    max-height: 60px;
     
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     padding-left: 20px;
 }
 
@@ -223,15 +224,60 @@ ul {
 
 
 
+fieldset {
+    position: relative;
+    border: none;
+    height: 100%;
+
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+input {
+    border: none;
+    margin-bottom: 22px;
+    border-bottom: 1.2px solid #000;
+}
+
+select {
+    border: none;
+    margin-bottom: 22px;
+    border-bottom: 1.2px solid #000;
+}
+
+
+button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 14px;
+    margin-left: -33.6px;
+}
+
+button[type=submit] {
+        background-color: #021a23;
+        color: #fff;
+        border: 2px solid #021a23;
+        padding: 30px 75px;
+        width: 102.5%;
+    }
+
+
+
+
+
+
+
 .form-main {
     color: #000;
     border: 2px solid #000;
     background-color: rgb(255, 255, 255, 0.8);
 
-    width: 265px;
+    max-width: 265px;
     height: 420px;
 
 }
+
+
 
 @media (max-width: 481px) {
     .form-main {display: none;}
