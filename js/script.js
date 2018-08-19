@@ -26,6 +26,8 @@ $(document).ready(function(){
 
   $('.video-wrap').slick({
     // setting-name: setting-value
+     slidesToShow: 1,
+        centerMode: true,centerPadding: '0px',
   });
 
 
