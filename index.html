@@ -4,7 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="style/normalize.css">
+
+	<link rel="stylesheet" href="style/slick.css">
+	<link rel="stylesheet" href="style/jquery.fancybox-plus.css">
+	<link rel="stylesheet" href="style/core.css">
+
+
 <link rel="stylesheet" href="style/style.css">
 	<title>Diez</title>
 </head>
@@ -165,26 +172,47 @@
 
 
 	<section id="video" class="video">
-		<div class="container"> 
+		<div class="container container-video"> 
 
 	<h2  class="video-h">В стенах школы</h2>
+
+
+
+	<div class="video-wrap">
+      <a href="https://youtu.be/L9szn1QQfas" class="video-wrap__item">
+        <img class="video-wrap__img" src="images/video_card_img_1.png" alt="" >
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=ozYjakb_py4" class="video-wrap__item">
+        <img class="video-wrap__img" src="images/video_card_img_2.png" alt="" >
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=dLbPyx0eMc4" class="video-wrap__item">
+        <img class="video-wrap__img" src="images/video_card_img_3.png" alt="" >
+      </a>
+    </div>
+
+
 
 		<div class="box-video">
 
   <div class="item">
-    <button></button><img src="images/video_card_img_4.png"/>
+    <a  href="https://www.youtube.com/watch?v=O28BCm7Z04o"><button></button><img src="images/video_card_img_4.png"/></a>
   </div>
   <div class="item">
-    <button></button><img src="images/video_card_img_3.png"/>
+    <button><a  href="#"></a></button><img src="images/video_card_img_3.png"/>
   </div>
   <div class="item item-third">
-    <button></button><img src="images/video_card_img_2.png"/>
+    <button><a  href="#"></a></button><img src="images/video_card_img_2.png"/>
   </div>
   <div class="item">
-    <button></button><img src="images/video_card_img_1.png"/>
+    <button><a href="#"></a></button><img src="images/video_card_img_1.png"/>
   </div>
 
 	</div>
+
+
+
 </div>
 
 		
@@ -197,7 +225,7 @@
 			<div class="row">
 				<div >
 					<h2 >Ждём тебя</h2>
-					<div id="map" class="map"></div>
+					<!-- <div id="map" class="map"></div> -->
 				</div>
 
 
@@ -255,7 +283,7 @@
         </footer>
 	</div>
 
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
     <script type="text/javascript">
         ymaps.ready(init);
@@ -274,9 +302,15 @@
             myMap.geoObjects.add(myPlacemark);
         }
     </script>
+ -->	
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox-plus.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+
 
 	<script src="js/script.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
 
 
 </body>
