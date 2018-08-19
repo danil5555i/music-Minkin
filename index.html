@@ -45,7 +45,7 @@
 
         <main>
         	<section class="diez">
-        		<div class="container main">
+        		<div class="container container-main">
 
 			<div class="main-box">
 				<h1>Diez — школа музыкального искусствa</h1>
@@ -76,6 +76,12 @@
 					<button type="submit" class="button-main">Записаться</button>
 					</fieldset>
 				</form>
+
+
+
+				<div class="lesson lesson-main">
+					<span>ВВОДНЫЙ УРОК</span>
+				</div>
 
 		
         	</section>
@@ -136,7 +142,7 @@
 							<div class="studio">Студия</div>
 						
 
-						<form action="" method="post" class="form-other">
+						<form action="" method="post" class="form-second">
 					<fieldset>
 						<div>						<p>Вводный урок</p>
 						<p>Попробуй любые направления  бесплатно</p>
@@ -161,6 +167,11 @@
 					<button type="submit" class="button-other">Записаться</button>
 					</fieldset>
 				</form>
+
+
+				<div class="lesson lesson-other">
+					<span>ВВОДНЫЙ УРОК</span>
+				</div>
 
 
 					</div>
@@ -189,6 +200,10 @@
 
       <a href="https://www.youtube.com/watch?v=dLbPyx0eMc4" class="video-wrap__item">
         <img class="video-wrap__img" src="images/video_card_img_3.png" alt="" >
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=dLbPyx0eMc4" class="video-wrap__item">
+        <img class="video-wrap__img" src="images/video_card_img_4.png" alt="" >
       </a>
     </div>
 
@@ -222,43 +237,60 @@
 	<section id="communications" class="communications">
 		<div class="container">
 
-			<div class="row">
-				<div >
+				<div style="    box-sizing: border-box;
+    margin: 2.5%;
+    width: 70%;">
+					<div class="text">
 					<h2 >Ждём тебя</h2>
-					<!-- <div id="map" class="map"></div> -->
+
+					<p style="margin-top: 13%;">СПб, 6-я Линия ВО 42 <br>
+						+7 (812) 566 56 56
+					</p>
+					</div>
+
+
+					<div id="map" class="map"></div>
 				</div>
 
 
-				<div >
+				<div style="box-sizing: border-box;
+    margin: 2.5%;
+    width: 25%;">
 
-					<form action="" method="post" class="form-other">
+					<form action="" method="post" class="form-third">
 					<fieldset>
-						<div>						<p>Вводный урок</p>
-						<p>Попробуй любые направления  бесплатно</p>
+						<div>						
+									<p class="p-form">Вводный урок</p>
+								<p>Попробуй любые направления  бесплатно</p>
 
-					<input type="text" minlength="3" title="Ведите имя" placeholder="Имя">
-					<input type="tel" pattern="[0-9]{7,13}" title="7-13 цифр" placeholder="Телефон">
+							<input type="text" minlength="3" title="Ведите имя" placeholder="Имя">
+							<input type="tel" pattern="[0-9]{7,13}" title="7-13 цифр" placeholder="Телефон">
 
-						<select name="" id=""> 
-						      <option>Направления
-						</option>
-						    <option>Гитара</option>
-						    <option>Вокал</option>
-						    <option>Фортепиано</option>
-						    <option>Скрипка</option>
-						    <option>Ударные</option>
-						    <option>Лекции</option>
-						  </optgroup>
-						</select>
+								<select name="" id=""> 
+								      <option>Направления
+									</option>
+									    <option>Гитара</option>
+									    <option>Вокал</option>
+									    <option>Фортепиано</option>
+									    <option>Скрипка</option>
+									    <option>Ударные</option>
+									    <option>Лекции</option>
+								  	</optgroup>
+								</select>
 						</div>
 
 
 					<button type="submit" class="button-other">Записаться</button>
 					</fieldset>
-				</form>
+					</form>
 
-				</div>
-			</div>
+
+					
+
+					</div><div class="lesson lesson-main">
+					<span>ВВОДНЫЙ УРОК</span>
+					</div>
+
 
 		</div>
 	</section>
@@ -282,28 +314,42 @@
         	</div>
         </footer>
 	</div>
+	<form action="" method="post" class="form-other form-modal">
+					<fieldset>
+						<div>						
+									<p class="p-form">Вводный урок</p>
+								<p>Попробуй любые направления  бесплатно</p>
 
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+							<input type="text" minlength="3" title="Ведите имя" placeholder="Имя">
+							<input type="tel" pattern="[0-9]{7,13}" title="7-13 цифр" placeholder="Телефон">
+
+								<select name="" id=""> 
+								      <option>Направления
+									</option>
+									    <option>Гитара</option>
+									    <option>Вокал</option>
+									    <option>Фортепиано</option>
+									    <option>Скрипка</option>
+									    <option>Ударные</option>
+									    <option>Лекции</option>
+								  	</optgroup>
+								</select>
+						</div>
+
+
+					<button type="submit" class="button-other">Записаться</button>
+					</fieldset>
+					</form>
+					<div class="modal-overlay"></div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
     <script type="text/javascript">
-        ymaps.ready(init);
-      
-        function init(){ 
-            var myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 7
-            }); 
-            
-            var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-                hintContent: 'Содержимое всплывающей подсказки',
-                balloonContent: 'Содержимое балуна'
-            });
-            
-            myMap.geoObjects.add(myPlacemark);
-        }
     </script>
- -->	
-	<script src="js/jquery-3.3.1.min.js"></script>
+	
 
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox-plus.min.js"></script>

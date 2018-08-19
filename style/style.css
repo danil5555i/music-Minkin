@@ -168,6 +168,7 @@ ul {
     box-sizing: border-box;
 
     margin-bottom: 20px;
+    position: relative;
 
 }
     
@@ -190,6 +191,7 @@ ul {
     font-size: 30px;
     color: #eec643;
     display: flex;
+    z-index: 1;
 }
 
 .box {
@@ -217,12 +219,13 @@ ul {
 
     .main-box {
         width: 100%;
+        margin-top: 145px;
     }
 
 }
 
 
-
+.lesson {display: none;}
 
 fieldset {
     position: relative;
@@ -234,6 +237,7 @@ fieldset {
 }
 
 input {
+    background-color: transparent;
     border: none;
     margin-bottom: 22px;
     border-bottom: 1.2px solid #000;
@@ -241,6 +245,7 @@ input {
 }
 
 select {
+    background-color: transparent;
     border: none;
     margin-bottom: 22px;
     border-bottom: 1.2px solid #000;
@@ -278,8 +283,6 @@ button[class=button-main] {
     color: #000;
     border: 2px solid #eec643;
     height: 546px;
-    width: 45%;
-    margin: 0 2.5% 2.5% 0;
 }
 
 
@@ -295,14 +298,75 @@ button[class=button-main] {
 }
 
 
-.form-other {
+.form-second {
     margin-left: 2.5%;
+    width: 45%;
 }
 
+.form-third{
+    width: 100%;
+}
 
+.form-modal {
+    display: none;
+}
 
 @media (max-width: 481px) {
+
+    .container-main{
+        justify-content: space-between;
+        margin: 0;
+    }
+
+
     .form-main {display: none;}
+    .form-second {display: none;}
+    .form-third {display: none;}
+
+.form-modal {
+        position: fixed;
+        z-index: 2000;
+        top: 50%;
+        left: 50%;
+        margin-top: -225px;
+        margin-left: -90px;
+            }
+.modal-overlay{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(140, 140, 140, .9);
+}
+.form-modal-show{
+
+        display: block;
+}
+
+    .lesson {
+        display: block;
+        background-color: #eec643;
+        color: #fff;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+
+    .lesson-main {
+        width: 100%;
+        bottom: 0;
+        padding: 30px;
+    }
+
+    .lesson-other {
+        width: 25%;
+        height: 145px;
+        margin: 5px 0 2.5% 2.5%;
+    }
+
+
 }
 
 
@@ -332,7 +396,6 @@ button[class=button-main] {
     transform: rotate(180deg);
     display: block;
     width: 3.5%;
-    /*white-space: nowrap;*/
     writing-mode: vertical-lr;
 }
 
@@ -412,17 +475,12 @@ left: 65px;
     margin: 5px 0; 
 }
 
-.col-1{
-    width: 25%;
-}
+
 
 .col-2 {
     width: 48%;
 }
 
-.col-3 {
-    width: 75%;
-}
 
 
 @media (max-width: 481px) {
@@ -458,7 +516,7 @@ left: 65px;
     width: 50.3%;
     height: 270px;
     background-image: url(../images/directions_card_img_2.jpg);
-    background-size: cover;
+    background-size: 150%;
     margin: 2.5% 0;
 }
 
@@ -473,7 +531,7 @@ left: 65px;
 .areas {
     width: 23.9%;
     height: 268px;
-    background-color: yellow;
+    background-color: #eec643;
 }
    
 
@@ -546,7 +604,7 @@ display: block;
 position: absolute;
 height: 100%;
 width: 100%;
-top: -5px;
+top: 0;
 }
 
 
@@ -601,7 +659,7 @@ top: -5px;
     }
 
     .studio {
-        width: 65%;
+        width: 70%;
         height: 145px;
     }
 
@@ -865,9 +923,30 @@ left: 65px;
 
 
 
+.text {
+      display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    justify-content: space-between;}
 
+    .p-form{margin-top: 40px;}
 
 .map {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 470px;
+}
+
+@media (max-width: 481px) {
+    .map {
+    width: 285px;
+    height: 215px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    }
+
+    footer{display: none;}
+
+    .communications {margin-bottom: 25px;}
+
 }
