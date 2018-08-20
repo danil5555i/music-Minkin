@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
 
+
+    var toggler = document.getElementById('toggler');
+toggler.addEventListener('click', mainNavVisibleToggle);
+function mainNavVisibleToggle(e) {
+  e.preventDefault();
+  toggler.classList.toggle('toggler--close');
+  document.getElementById('nav').classList.toggle('nav--visible');
+}
+
+
+
     
 
     $('.lesson').click(function(){
@@ -40,9 +51,12 @@ $(document).ready(function(){
             }); 
             
             var myPlacemark = new ymaps.Placemark([59.941993, 30.279423], {
-                hintContent: 'Содержимое всплывающей подсказки',
-                balloonContent: 'Содержимое балуна'
-            });
+                hintContent: 'Diez',
+                balloonContent: 'Подсказочка'
+            }
+
+
+            );
             
             myMap.geoObjects.add(myPlacemark);
         }
