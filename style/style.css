@@ -239,6 +239,8 @@ ul {
   @media (max-width: 481px) {
 
     .toggler {
+        padding-top: 5%;
+        padding-right: 5%;
             display: flex;
         position: absolute;
         z-index: 150;
@@ -610,20 +612,13 @@ left: 65px;
 
 
 
-
 [class^="col-"] { 
     padding-left: 15px;
     margin: 5px 0; 
 }
-
-
-
 .col-2 {
     width: 48%;
 }
-
-
-
 @media (max-width: 481px) {
     .col-2 {
         width: 100%;
@@ -656,7 +651,7 @@ left: 65px;
 .vocal {
     width: 50.3%;
     height: 270px;
-    background-image: url(../images/directions_card_img_2.jpg);
+    background-image: url(../images/directions_card_img_2.png);
     background-size: 150%;
     margin: 2.5% 0;
 }
@@ -988,31 +983,6 @@ left: 65px;
     max-height: 270px
 }
 
-
-/*    .box-video {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-
-.item {
-    width: 100%;
-}
-.item-third{margin-bottom: 0;}
-.item:last-child{
-  width: 240px;
-}
-.item:last-child img{
-  height: calc(185px - 6px*2 );
-}
-.item img {
-  max-width: 100%;
-    width: 70%;
-    height: 185px;
-    margin-left: 15%;
-}*/
-
 .item button{
     border-width: 20px 20px 20px 35px;
 }
@@ -1025,14 +995,14 @@ left: 65px;
     top: 50%;
     transform: translateY(-50%);
     font: 0/0 a;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background: #0ff;
+    width: 0;
+    border: 0;
+    height: 0;
+    background-color: snow;
     color: transparent;
 }
 .slick-prev {
-    left: 15%;
+    left: 40px;
 }
 .slick-prev:before {
     content: '';
@@ -1040,12 +1010,12 @@ left: 65px;
     height: 20px;
     display: block;
     border: 2px solid transparent;
-    border-right-color: #fff;
-    border-bottom-color: #fff;
+    border-right-color: #eec643;
+    border-bottom-color: #eec643;
     transform: rotate(135deg);
 }
 .slick-next {
-    right: 0;
+    right: 30px;
 }
 .slick-next:before {
     content: '';
@@ -1053,8 +1023,8 @@ left: 65px;
     height: 20px;
     display: block;
     border: 2px solid transparent;
-    border-right-color: #fff;
-    border-bottom-color: #fff;
+    border-right-color: #eec643;
+    border-top-color: #eec643;
     transform: rotate(45deg);
 }
 
